@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        *{
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+        } 
+        button {
+            padding: 10px;
+            width: 100px;
+            border-radius: 5px;
+            font-size: medium;
+            font-weight: bolder;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        button:hover {
+            scale: 102%;
+            background-color: aqua;
+            transition-duration: 0.5s;
+        }
+        a{
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (width < 1000px){
+            .container{
+                width: 38%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;">
+        <h1>Hey there!!</h1>
+        <div class="container">
+            <button><a href="/login">Login</a></button>
+            <button><a href="/signup">Sign-up</a></button>
+        </div>
+    </div>
+</body>
+</html>
