@@ -68,14 +68,16 @@
             <p>Yayy, Happy to see you again !!</p>
         </div>
         <div class="right" style="width: 100%;">
-            <div class="right-container" style="height: 250px; align-items: center; justify-content: center; display: flex; width: 100%;">
-                <div class="cont" style="display: flex; flex-direction: column; width: 100%; gap: 10px;" >
-                    <input type="text" placeholder="Enter registered mail-id">
-                    <input type="password" placeholder="Enter password">
-                    <button><a href="/">Back</a></button>
-                    <button><a href="/check">Login</a></button>
+            <form method="POST">
+                <div class="right-container" style="height: 250px; align-items: center; justify-content: center; display: flex; width: 100%;">
+                    <div class="cont" style="display: flex; flex-direction: column; width: 100%; gap: 10px;" >
+                        <input type="text" name="email" placeholder="Enter registered mail-id" id="email">
+                        <input type="password" name="pass" placeholder="Enter password" id="pass">
+                        <button><a href="/">Back</a></button>
+                        <button><a href="">Login</a></button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>

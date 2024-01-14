@@ -67,7 +67,7 @@
             }
         }
     </style>
-    <script>
+    <!-- <script>
         function validator() {
             var name = document.getElementById("name");
             var email = document.getElementById("email");
@@ -98,7 +98,7 @@
                 }, 2000);
             }
         }
-    </script>
+    </script> -->
 </head>
 <body>
     <div class="container" style="width: 50%; height: 50%; display: flex; justify-content: center; align-items: center;">
@@ -109,12 +109,12 @@
         <div class="right" style="width: 100%;">
             <div class="right-container" style="align-items: center; justify-content: center; display: flex; width: 100%;">
                 <div class="cont" style="display: flex; flex-direction: column; width: 100%; gap: 10px;" >
-                    <input type="text" placeholder="Enter your name" id="name">
-                    <input type="text" placeholder="Enter your mail-id" id="email">
-                    <input type="password" placeholder="Enter password" value="" id="epass">
-                    <input type="password" placeholder="Confirm password" value="" id="cpass">
+                    <input type="text" name="uname" placeholder="Enter your name" id="name">
+                    <input type="text" name="email" placeholder="Enter your mail-id" id="email">
+                    <input type="password" name="pass1" placeholder="Enter password" value="" id="epass">
+                    <input type="password" name="pass2" placeholder="Confirm password" value="" id="cpass">
                     <button><a href="/">Back</a></button>
-                    <button onclick="validator()">Signup</button>
+                    <button >Signup</button>
                 </div>
             </div>
         </div>
