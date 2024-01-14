@@ -19,10 +19,10 @@ mydb = mysql.connector.connect(
 
 cu=mydb.cursor()
 
-cu.execute("CREATE TABLE IF NOT EXISTS users(uid integer(5) auto_increment,email varchar(50),name varchar(20),password varchar(20),primary key(uid))")
-cu.execute("CREATE TABLE IF NOT EXISTS playlist(pid integer(5) primary key,pname varchar(20), uid int, foreign key(uid) references users(uid))")
-cu.execute("CREATE TABLE IF NOT EXISTS songs(sid integer(5) primary key,sname varchar(20),artist varchar(20),pid int ,foreign key(pid) references playlist(pid))")
-cu.execute("CREATE TABLE IF NOT EXISTS play_queue(slno integer(5) primary key, sname varchar(20), sid int, foreign key(sid) references songs(sid))")
+cu.execute("CREATE TABLE IF NOT EXISTS users(email varchar(50),name varchar(20),password varchar(20),primary key(name))")
+#cu.execute("CREATE TABLE IF NOT EXISTS playlist(pid integer(5) primary key,pname varchar(20), uid int, foreign key(uid) references users(uid))")
+#cu.execute("CREATE TABLE IF NOT EXISTS songs(sid integer(5) primary key,sname varchar(20),artist varchar(20),pid int ,foreign key(pid) references playlist(pid))")
+#cu.execute("CREATE TABLE IF NOT EXISTS play_queue(slno integer(5) primary key, sname varchar(20), sid int, foreign key(sid) references songs(sid))")
 
 
 def create_app():

@@ -68,13 +68,13 @@
             <p>Yayy, Happy to see you again !!</p>
         </div>
         <div class="right" style="width: 100%;">
-            <form method="POST">
+            <form method="POST" onsubmit="return authent()" action="/authenticate">
                 <div class="right-container" style="height: 250px; align-items: center; justify-content: center; display: flex; width: 100%;">
                     <div class="cont" style="display: flex; flex-direction: column; width: 100%; gap: 10px;" >
                         <input type="text" name="email" placeholder="Enter registered mail-id" id="email">
                         <input type="password" name="pass" placeholder="Enter password" id="pass">
                         <button><a href="/">Back</a></button>
-                        <button  onclick="authsign()"><a>Login</a></button>
+                        <button type="submit"><a>Login</a></button>
                     </div>
                 </div>
             </form>
